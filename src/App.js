@@ -1,5 +1,6 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import "./App.css";
+import React from "react";
 
 function App() {
 
@@ -33,12 +34,15 @@ function App() {
     },
   ]
 
+  // return React.createElement(
+  //   'div', {}, React.createElement('h2', {}, "Expense Tracker Demo"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
   return (
     <div>
       <h2 className="header-text">Expense Tracker Demo</h2>
-
       <Expenses items={ expenses } />
-
     </div >
     // jsx a special syntax developed by react team, known as javascript xml as html is an xml
   );
